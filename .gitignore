@@ -1,8 +1,10 @@
 ﻿__pycache__/
 *.csv
-*..csv
 *.xlsx
 *.pptx
 *.ipynb_checkpoints
 emails.code-workspace
 .vscode
+!Email Reports\join-csv.py
+venv
+Email Send Analisys\data

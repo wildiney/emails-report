@@ -4,7 +4,7 @@ import glob
 import pandas as pd
 
 extension = 'csv'
-directory = '2021-01-08 - Minsait Make the Difference 2021 - E o ano está comecando com tudo'
+directory = ''
 filename = directory + ".csv"
 
 all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
@@ -23,7 +23,7 @@ for file in all_filenames:
             shutil.move(file, directory)
 
 if os.path.exists(directory):
-  shutil.move(directory, '../Email Reports/'+directory)
+    shutil.move(directory, '../Email Reports/'+directory)
 
 if os.path.exists(filename):
-  shutil.move(filename,'../Email Send Analisys/data/'+filename)
+    shutil.move(filename, '../Email Send Analisys/data/'+filename)
